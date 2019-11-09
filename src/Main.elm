@@ -159,6 +159,14 @@ about =
 
 aboutLink =
     Html.a [ href "https://showell.github.io/" ] [ Html.text "Steve Howell" ]
+        |> List.singleton
+        |> Html.div []
+
+
+repoLink =
+    Html.a [ href "https://github.com/showell/binary-tree-diagram" ] [ Html.text "repo" ]
+        |> List.singleton
+        |> Html.div []
 
 
 view : Model -> Browser.Document Msg
@@ -190,6 +198,7 @@ view model =
 
         body =
             [ about
+            , repoLink
             , aboutLink
             , example 15 True
             , example 20 True
