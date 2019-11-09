@@ -3,7 +3,7 @@
     "name": "showell/binary-tree-diagram",
     "summary": "draws binary trees (with SVG)",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "exposed-modules": [
         "BinaryTreeDiagram"
     ],
