@@ -1,7 +1,4 @@
-module BinaryTreeDiagram exposing
-    ( diagramView
-    , BinaryTree(..)
-    )
+module BinaryTreeDiagram exposing (BinaryTree(..), diagramView)
 
 {-| Create a diagram of a binary tree.
 
