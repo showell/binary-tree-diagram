@@ -7,7 +7,7 @@ import BinaryTreeDiagram
         )
 import Browser
 import Html
-import Html.Attributes exposing (style)
+import Html.Attributes exposing (href, style)
 import Random
 
 
@@ -150,10 +150,15 @@ about =
     All it really does is draw binary trees.
 
     The colors here are just randomly chosen.
+
     """
         |> Html.text
         |> List.singleton
         |> Html.p []
+
+
+aboutLink =
+    Html.a [ href "https://showell.github.io/" ] [ Html.text "Steve Howell" ]
 
 
 view : Model -> Browser.Document Msg
@@ -185,6 +190,7 @@ view model =
 
         body =
             [ about
+            , aboutLink
             , example 15 True
             , example 20 True
             , example 31 True
