@@ -50,7 +50,7 @@ type alias DiagramData v =
 
     diagramView (\v -> v.color) (\v -> v.text) tree
 
-    diagramView (\_ -> "blue"(\_ -> "") tree
+    diagramView (\_ -> "blue") (\_ -> "") tree
 
 -}
 diagramView : (v -> String) -> (v -> String) -> BinaryTree v -> Html msg
